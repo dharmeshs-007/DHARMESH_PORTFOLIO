@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
@@ -12,10 +12,19 @@ import Footer from "./components/Footer";
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home");
+  const isProgrammaticScroll = useRef(false);
 
   // Scroll detection to highlight active navigation link
   useEffect(() => {
     const handleScroll = () => {
+      if (isProgrammaticScroll.current) return;
+
+      const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50;
+      if (isAtBottom) {
+        setActiveSection("contact");
+        return;
+      }
+
       const sections = ["home", "experience", "projects", "skills", "education", "contact"];
       const scrollPos = window.scrollY + 200;
 
@@ -39,7 +48,12 @@ export default function Portfolio() {
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
+      isProgrammaticScroll.current = true;
+      setActiveSection(id);
       el.scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => {
+        isProgrammaticScroll.current = false;
+      }, 800);
     }
   };
 
@@ -58,13 +72,12 @@ export default function Portfolio() {
         
         <Skills />
 
-        <section id="education" className="grid grid-cols-1 lg:grid-cols-5 gap-16 scroll-mt-24">
-          <div className="lg:col-span-2">
-            <Education />
-          </div>
-          <div className="lg:col-span-3">
-            <Contact />
-          </div>
+        <section id="education" className="scroll-mt-24">
+          <Education />
+        </section>
+
+        <section id="contact" className="scroll-mt-24 pb-[30vh]">
+          <Contact />
         </section>
       </main>
 
