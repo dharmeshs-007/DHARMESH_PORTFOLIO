@@ -31,7 +31,7 @@ export default function Hero({ scrollTo }: { scrollTo: (id: string) => void }) {
           <span>View Projects</span>
           <ChevronRight className="w-4 h-4" />
         </button>
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" download="Dharmesh_Singh_Resume.pdf" className="px-6 py-3 rounded-full border border-indigo-500/30 hover:border-indigo-500 bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 text-sm font-medium flex items-center space-x-1.5 transition-all">
+        <a href="/Dharmesh_Singh.pdf" target="_blank" rel="noopener noreferrer" download="Dharmesh_Singh_Resume.pdf" className="px-6 py-3 rounded-full border border-indigo-500/30 hover:border-indigo-500 bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 text-sm font-medium flex items-center space-x-1.5 transition-all">
           <span>Download CV</span>
           <ArrowUpRight className="w-4 h-4" />
         </a>
@@ -44,7 +44,7 @@ export default function Hero({ scrollTo }: { scrollTo: (id: string) => void }) {
         <a href={`mailto:${PERSONAL_INFO.email}`} className="flex items-center space-x-1.5 hover:text-white"><Mail className="w-3.5 h-3.5 text-indigo-400" /><span>{PERSONAL_INFO.email}</span></a>
         <a href={`tel:${PERSONAL_INFO.phone}`} className="flex items-center space-x-1.5 hover:text-white"><Phone className="w-3.5 h-3.5 text-purple-400" /><span>{PERSONAL_INFO.phone}</span></a>
         <span className="flex items-center space-x-1.5"><MapPin className="w-3.5 h-3.5 text-pink-400" /><span>{PERSONAL_INFO.location}</span></span>
-        <a href={PERSONAL_INFO.github} target="_blank" rel="noopener" className="flex items-center space-x-1.5 hover:text-white"><GithubIcon className="w-3.5 h-3.5 text-slate-300" /><span>GitHub</span></a>
+        {/* <a href={PERSONAL_INFO.github} target="_blank" rel="noopener" className="flex items-center space-x-1.5 hover:text-white"><GithubIcon className="w-3.5 h-3.5 text-slate-300" /><span>GitHub</span></a> */}
       </div>
     </section>
   );

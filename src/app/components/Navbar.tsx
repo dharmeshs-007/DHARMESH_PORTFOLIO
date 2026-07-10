@@ -27,7 +27,7 @@ export default function Navbar({ activeSection, scrollTo }: { activeSection: str
       </nav>
 
       <div className="hidden md:flex items-center space-x-2.5">
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" download="Dharmesh_Singh_Resume.pdf" className="px-4 py-1.5 text-xs font-semibold rounded-full border border-white/10 hover:border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all">
+        <a href="/Dharmesh_Singh.pdf" target="_blank" rel="noopener noreferrer" download="Dharmesh_Singh_Resume.pdf" className="px-4 py-1.5 text-xs font-semibold rounded-full border border-white/10 hover:border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all">
           Download CV
         </a>
         <button onClick={() => scrollTo("contact")} className="px-4 py-1.5 text-xs font-semibold rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg">
@@ -51,7 +51,7 @@ export default function Navbar({ activeSection, scrollTo }: { activeSection: str
             </button>
           ))}
           <a
-            href="/resume.pdf"
+            href="/Dharmesh_Singh.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download="Dharmesh_Singh_Resume.pdf"
