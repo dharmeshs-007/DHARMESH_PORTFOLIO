@@ -1,13 +1,13 @@
-// Simplified Portfolio Data
+// Portfolio Data matching the latest uploaded PDF resume
 
 export const PERSONAL_INFO = {
   name: "Dharmesh Singh",
   title: "Frontend Developer",
   email: "dharmeshfeb25@gmail.com",
   phone: "+91-8266804691",
-  location: "Delhi, India",
+  location: "Delhi, India 110092",
   github: "https://github.com",
-  summary: "Frontend Developer with hands-on production experience building scalable, user-facing web applications serving 1k-10k+ users. Strong command of Vue.js, Nuxt.js, Next.js, and Tailwind CSS."
+  summary: "Performance-driven Frontend Developer with production experience designing, building, and deploying scalable, user-centric web applications serving 10,000+ active users. Proven track record managing full product lifecycles—from initial architecture to production deployment—including a 4-stage fundraising platform, an AI-driven political tool, and a live-bidding application. Deep technical expertise in Vue.js, Nuxt.js, Next.js, React, and TypeScript."
 };
 
 export const EXPERIENCE = [
@@ -15,34 +15,38 @@ export const EXPERIENCE = [
     company: "Molitics",
     website: "https://molitics.in",
     role: "Frontend Developer",
-    period: "Jan 2025 – Present",
+    period: "June 2024 – Present",
     projects: [
       {
         id: "fundraise",
         title: "Fundraise Platform",
-        tech: ["Vue.js", "Nuxt.js", "Tailwind CSS"],
+        tech: ["Vue.js", "Nuxt.js", "Tailwind CSS", "Redux"],
         details: [
-          "Built a robust 4-stage multi-step donation flow with real-time progress tracking.",
-          "Implemented donor-receiver transparency and transaction history logs.",
-          "Designed a dynamic social proof panel displaying recent donations in real-time."
+          "Engineered a 4-stage multi-step Fundraise Platform using Vue.js, Nuxt.js, and Tailwind CSS; implemented real-time state tracking and optimized async data queries to seamlessly scale for 10,000+ active users."
         ]
       },
       {
         id: "yara",
-        title: "Yara AI Assistant",
-        tech: ["Vue.js", "Nuxt.js", "AI Integration"],
+        title: "Yara AI",
+        tech: ["Vue.js", "Nuxt.js", "AI Integration", "Tailwind CSS"],
         details: [
-          "Engineered custom prompt logic for a political content assistant.",
-          "Created role-based response moderation and automated feed-post summarization."
+          "Spearheaded the frontend development of Yara AI, deploying custom prompt workflows and automated content streams that decreased manual content moderation cycles by 40%."
         ]
       },
       {
         id: "mstore",
-        title: "M Store Platform",
-        tech: ["Vue.js", "Nuxt.js", "WebSockets"],
+        title: "M Store",
+        tech: ["Vue.js", "Nuxt.js", "WebSockets", "Tailwind CSS"],
         details: [
-          "Designed a dual-purchase experience with direct buy and live-bidding.",
-          "Created a real-time competitive bidding popup mechanism with WebSocket support."
+          "Designed and launched the M Store application featuring live bidding architecture; integrated WebSocket-driven data synchronization to maintain sub-second latency for over 500+ concurrent bidders."
+        ]
+      },
+      {
+        id: "refactoring",
+        title: "Legacy Refactoring",
+        tech: ["Vue.js", "Optimization", "Component Design"],
+        details: [
+          "Refactored legacy code into reusable, modular UI components, accelerating frontend rendering performance benchmarks by 25% and establishing team-wide coding standards."
         ]
       }
     ]
@@ -51,38 +55,74 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
-    title: "Molitics Dashboard",
-    tech: ["HTML5", "CSS3", "Vanilla JS"],
-    description: "Political analytics dashboard tracking Lok Sabha 2024 seat distribution, voter turnout, and party performance.",
+    title: "Molitics Platform Migration",
+    tech: ["Next.js", "Redux Toolkit", "REST API", "SSR"],
+    description: "Migrated legacy codebases to Next.js SSR architecture and optimized global state management.",
     bullets: [
-      "Zero-dependency animated bar charts and searchable party table.",
-      "Sentiment donut chart and native CSS light/dark mode."
-    ],
-    interactiveType: "dashboard"
+      "Migrated a legacy codebase to a modern Next.js architecture utilizing Server-Side Rendering (SSR) and configured Redux Toolkit to optimize global data persistence.",
+      "Developed an API-driven, interactive homepage with real-time social metrics (likes, trends, follows), accelerating initial content load speeds and LCP by 30%.",
+      "Built a dynamic AI-powered analysis module, enabling users to generate side-by-side profile comparisons with real-time analytics."
+    ]
+  },
+  {
+    title: "Molitics Next.js Dashboard",
+    tech: ["Next.js", "Redux Toolkit", "REST API", "SSR"],
+    description: "Developed modern frontend layouts, home feeds with social triggers, and leader comparisons.",
+    bullets: [
+      "Developed a modern frontend layout using Next.js with Redux Toolkit, creating reusable Redux slices and scalable state management.",
+      "Built an API-driven Home Feed with posts, like/dislike, comments, trending feed, follow/unfollow functionality, and leader profile pages.",
+      "Developed an AI-powered Leader Comparison feature for comparing political leaders through AI-generated insights.",
+      "Created reusable, responsive components and optimized API integration for a fast, maintainable, and production-ready user experience."
+    ]
   },
   {
     title: "IPL Stats Tracker",
-    tech: ["HTML5", "CSS3", "Vanilla JS"],
-    description: "Dark-themed IPL 2024 season tracker featuring points table, player leaderboards, and search.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Client-Side Search"],
+    description: "Sports tracking web application featuring high-speed global text indexing and filtering.",
     bullets: [
-      "Clean, responsive card UI styled purely with vanilla CSS variables.",
-      "Orange & Purple Cap leaderboard with searchable filter fields."
-    ],
-    interactiveType: "ipl"
+      "Created a high-speed sports tracking web application featuring sub-second global text indexing and custom multi-attribute filtering logic.",
+      "Designed an abstract state management layer allowing for immediate data swap transitions when switching from local mock arrays to live API streaming feeds."
+    ]
   }
 ];
 
 export const SKILLS = [
-  { category: "Frameworks", items: ["Vue.js", "Nuxt.js", "Next.js"] },
-  { category: "Languages", items: ["JavaScript", "TypeScript", "HTML5", "CSS3"] },
-  { category: "Styling", items: ["Tailwind CSS", "Responsive Design"] },
-  { category: "State & Data", items: ["Redux", "REST API", "GraphQL", "WebSockets"] },
-  { category: "Tools", items: ["Git", "GitHub", "Vercel", "VS Code"] }
+  {
+    category: "Frameworks & Libraries",
+    items: ["Vue.js", "Nuxt.js", "Next.js", "React.js", "Node.js"]
+  },
+  {
+    category: "Languages",
+    items: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "SQL"]
+  },
+  {
+    category: "Styling & UI/UX",
+    items: ["Tailwind CSS", "Material UI", "Responsive Design", "Mobile-First Architecture", "Cross-Browser Compatibility"]
+  },
+  {
+    category: "State & Data Management",
+    items: ["Redux Toolkit", "Pinia", "Context API", "RESTful APIs", "GraphQL", "Axios", "Async Data Fetching"]
+  },
+  {
+    category: "Tools & DevOps",
+    items: ["Git", "GitHub", "Vercel", "Webpack", "Vite", "CI/CD Pipelines", "Jest", "Chrome DevTools"]
+  }
 ];
 
 export const EDUCATION = [
-  { degree: "MSc, CS", school: "Chinmaya Degree College", year: "2020 – 2022" },
-  { degree: "BSc, CS", school: "Chinmaya Degree College", year: "2017 – 2020" },
-  { degree: "Dip. Mech Engg", school: "UBTER University", year: "2013 – 2016" },
-  { degree: "Class XII", school: "Vidhay Mandir School", year: "2012 – 2013" }
+  {
+    degree: "Master of Science (M.Sc.) in Computer Science",
+    school: "Chinmaya Degree College",
+    year: "2020 – 2022"
+  },
+  {
+    degree: "Bachelor of Science (B.Sc.) in Computer Science",
+    school: "Chinmaya Degree College",
+    year: "2017 – 2020"
+  },
+  {
+    degree: "Diploma in Mechanical Engineering",
+    school: "UBTER University",
+    year: "2013 – 2016"
+  }
 ];

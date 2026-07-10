@@ -26,9 +26,14 @@ export default function Navbar({ activeSection, scrollTo }: { activeSection: str
         ))}
       </nav>
 
-      <button onClick={() => scrollTo("contact")} className="hidden md:block px-4 py-1.5 text-xs font-semibold rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg">
-        Hire Me
-      </button>
+      <div className="hidden md:flex items-center space-x-2.5">
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" download="Dharmesh_Singh_Resume.pdf" className="px-4 py-1.5 text-xs font-semibold rounded-full border border-white/10 hover:border-white/20 bg-white/5 hover:bg-white/10 text-white transition-all">
+          Download CV
+        </a>
+        <button onClick={() => scrollTo("contact")} className="px-4 py-1.5 text-xs font-semibold rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg">
+          Hire Me
+        </button>
+      </div>
 
       <button onClick={() => setOpen(!open)} className="md:hidden text-slate-400 hover:text-white">
         {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -45,6 +50,15 @@ export default function Navbar({ activeSection, scrollTo }: { activeSection: str
               {s}
             </button>
           ))}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Dharmesh_Singh_Resume.pdf"
+            className="w-full text-center py-2.5 mt-2 rounded-xl border border-white/10 bg-white/5 text-white font-semibold text-sm"
+          >
+            Download CV
+          </a>
         </div>
       )}
     </header>

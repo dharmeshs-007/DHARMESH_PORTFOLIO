@@ -26,14 +26,17 @@ export default function Hero({ scrollTo }: { scrollTo: (id: string) => void }) {
         {PERSONAL_INFO.summary}
       </p>
 
-      <div className="flex space-x-4 mb-12">
+      <div className="flex flex-wrap gap-4 mb-12">
         <button onClick={() => scrollTo("projects")} className="px-6 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:opacity-90 text-white text-sm font-medium flex items-center space-x-1">
           <span>View Projects</span>
           <ChevronRight className="w-4 h-4" />
         </button>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" download="Dharmesh_Singh_Resume.pdf" className="px-6 py-3 rounded-full border border-indigo-500/30 hover:border-indigo-500 bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 text-sm font-medium flex items-center space-x-1.5 transition-all">
+          <span>Download CV</span>
+          <ArrowUpRight className="w-4 h-4" />
+        </a>
         <button onClick={() => scrollTo("contact")} className="px-6 py-3 rounded-full border border-white/10 bg-white/5 text-white text-sm font-medium flex items-center space-x-1">
           <span>Contact</span>
-          <ArrowUpRight className="w-4 h-4" />
         </button>
       </div>
 
