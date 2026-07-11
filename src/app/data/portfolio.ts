@@ -1,4 +1,4 @@
-// Portfolio Data matching the latest uploaded PDF resume
+// Portfolio Data matching the latest PDF resume
 
 export const PERSONAL_INFO = {
   name: "Dharmesh Singh",
@@ -7,7 +7,7 @@ export const PERSONAL_INFO = {
   phone: "+91-8266804691",
   location: "Delhi, India 110092",
   github: "https://github.com",
-  summary: "Performance-driven Frontend Developer with production experience designing, building, and deploying scalable, user-centric web applications serving 10,000+ active users. Proven track record managing full product lifecycles—from initial architecture to production deployment—including a 4-stage fundraising platform, an AI-driven political tool, and a live-bidding application. Deep technical expertise in Vue.js, Nuxt.js, Next.js, React, and TypeScript."
+  summary: "Frontend Developer with hands-on production experience building scalable, user-centric web applications serving 10,000+ active users. Experienced in developing production-ready frontend applications, integrating REST APIs, and delivering scalable solutions for fundraising platforms, AI-driven applications, and real-time bidding systems. Strong expertise in React.js, Next.js, Vue.js, TypeScript, reusable UI components, API integration, responsive web design, and Server-Side Rendering (SSR)."
 };
 
 export const EXPERIENCE = [
@@ -20,33 +20,33 @@ export const EXPERIENCE = [
       {
         id: "fundraise",
         title: "Fundraise Platform",
-        tech: ["Vue.js", "Nuxt.js", "Tailwind CSS", "Redux"],
+        tech: ["Vue.js", "Next.js", "Tailwind CSS", "REST APIs"],
         details: [
-          "Engineered a 4-stage multi-step Fundraise Platform using Vue.js, Nuxt.js, and Tailwind CSS; implemented real-time state tracking and optimized async data queries to seamlessly scale for 10,000+ active users."
+          "Developed a responsive 4-stage Fundraise Platform using Vue.js, Next.js, Tailwind CSS, and REST APIs, supporting 10,000+ active users."
         ]
       },
       {
         id: "yara",
         title: "Yara AI",
-        tech: ["Vue.js", "Nuxt.js", "AI Integration", "Tailwind CSS"],
+        tech: ["AI Workflows", "REST APIs", "Component Design"],
         details: [
-          "Spearheaded the frontend development of Yara AI, deploying custom prompt workflows and automated content streams that decreased manual content moderation cycles by 40%."
+          "Built responsive frontend modules for Yara AI by integrating AI-driven workflows, REST APIs, and reusable UI components."
         ]
       },
       {
         id: "mstore",
         title: "M Store",
-        tech: ["Vue.js", "Nuxt.js", "WebSockets", "Tailwind CSS"],
+        tech: ["Vue.js", "REST APIs", "WebSockets"],
         details: [
-          "Designed and launched the M Store application featuring live bidding architecture; integrated WebSocket-driven data synchronization to maintain sub-second latency for over 500+ concurrent bidders."
+          "Designed and developed the frontend for the M Store application using Vue.js, REST APIs, WebSockets, and reusable UI components, enabling a seamless real-time bidding experience."
         ]
       },
       {
         id: "refactoring",
         title: "Legacy Refactoring",
-        tech: ["Vue.js", "Optimization", "Component Design"],
+        tech: ["Optimization", "Scalability", "Component Design"],
         details: [
-          "Refactored legacy code into reusable, modular UI components, accelerating frontend rendering performance benchmarks by 25% and establishing team-wide coding standards."
+          "Refactored legacy frontend code into reusable, modular UI components, improving maintainability, scalability, and frontend performance."
         ]
       }
     ]
@@ -59,20 +59,9 @@ export const PROJECTS = [
     tech: ["Next.js", "Redux Toolkit", "REST API", "SSR"],
     description: "Migrated legacy codebases to Next.js SSR architecture and optimized global state management.",
     bullets: [
-      "Migrated a legacy codebase to a modern Next.js architecture utilizing Server-Side Rendering (SSR) and configured Redux Toolkit to optimize global data persistence.",
-      "Developed an API-driven, interactive homepage with real-time social metrics (likes, trends, follows), accelerating initial content load speeds and LCP by 30%.",
-      "Built a dynamic AI-powered analysis module, enabling users to generate side-by-side profile comparisons with real-time analytics."
-    ]
-  },
-  {
-    title: "Molitics Next.js Dashboard",
-    tech: ["Next.js", "Redux Toolkit", "REST API", "SSR"],
-    description: "Developed modern frontend layouts, home feeds with social triggers, and leader comparisons.",
-    bullets: [
-      "Developed a modern frontend layout using Next.js with Redux Toolkit, creating reusable Redux slices and scalable state management.",
-      "Built an API-driven Home Feed with posts, like/dislike, comments, trending feed, follow/unfollow functionality, and leader profile pages.",
-      "Developed an AI-powered Leader Comparison feature for comparing political leaders through AI-generated insights.",
-      "Created reusable, responsive components and optimized API integration for a fast, maintainable, and production-ready user experience."
+      "Migrated a legacy frontend application to Next.js using Server-Side Rendering (SSR) and Redux Toolkit for scalable state management.",
+      "Developed an API-driven social feed featuring posts, likes, comments, follow/unfollow, and trending functionality using Redux Toolkit and REST APIs.",
+      "Developed an AI-powered leader comparison feature enabling side-by-side profile analysis using dynamic API data."
     ]
   },
   {
@@ -80,32 +69,40 @@ export const PROJECTS = [
     tech: ["HTML5", "CSS3", "JavaScript", "Client-Side Search"],
     description: "Sports tracking web application featuring high-speed global text indexing and filtering.",
     bullets: [
-      "Created a high-speed sports tracking web application featuring sub-second global text indexing and custom multi-attribute filtering logic.",
-      "Designed an abstract state management layer allowing for immediate data swap transitions when switching from local mock arrays to live API streaming feeds."
+      "Developed a responsive IPL statistics application with client-side search, filtering, and optimized rendering using JavaScript.",
+      "Structured the application for seamless migration from static JSON data to live REST API integration."
     ]
   }
 ];
 
 export const SKILLS = [
   {
-    category: "Frameworks & Libraries",
-    items: ["Vue.js", "Nuxt.js", "Next.js", "React.js", "Node.js"]
+    category: "Frontend",
+    items: ["React.js", "Next.js", "Vue.js", "HTML5", "CSS3"]
   },
   {
     category: "Languages",
-    items: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "SQL"]
+    items: ["JavaScript (ES6+)", "TypeScript", "SQL"]
   },
   {
-    category: "Styling & UI/UX",
-    items: ["Tailwind CSS", "Material UI", "Responsive Design", "Mobile-First Architecture", "Cross-Browser Compatibility"]
+    category: "Styling",
+    items: ["Tailwind CSS", "Responsive Design", "Mobile-First Design", "Cross-Browser Compatibility"]
   },
   {
-    category: "State & Data Management",
-    items: ["Redux Toolkit", "Pinia", "Context API", "RESTful APIs", "GraphQL", "Axios", "Async Data Fetching"]
+    category: "State Management",
+    items: ["Redux Toolkit", "Context API"]
   },
   {
-    category: "Tools & DevOps",
-    items: ["Git", "GitHub", "Vercel", "Webpack", "Vite", "CI/CD Pipelines", "Jest", "Chrome DevTools"]
+    category: "Performance",
+    items: ["Server-Side Rendering (SSR)", "Lazy Loading", "Code Splitting"]
+  },
+  {
+    category: "API & Networking",
+    items: ["REST APIs", "API Integration", "Axios", "WebSockets"]
+  },
+  {
+    category: "Developer Tools",
+    items: ["Git", "GitHub", "Vercel", "Webpack", "Vite", "Chrome DevTools"]
   }
 ];
 

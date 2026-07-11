@@ -1,17 +1,18 @@
 "use client";
 
-import React from "react";
-import { Cpu, Code2, Layers, Database, Settings } from "lucide-react";
+import { Cpu, Code2, Layers, Database, Settings, TrendingUp, Globe } from "lucide-react";
 import { SKILLS } from "../data/portfolio";
 
 export default function Skills() {
   const getIcon = (category: string) => {
     const icons: Record<string, React.ReactNode> = {
-      "Frameworks & Libraries": <Cpu className="w-4 h-4 text-indigo-400" />,
+      "Frontend": <Cpu className="w-4 h-4 text-indigo-400" />,
       "Languages": <Code2 className="w-4 h-4 text-purple-400" />,
-      "Styling & UI/UX": <Layers className="w-4 h-4 text-pink-400" />,
-      "State & Data Management": <Database className="w-4 h-4 text-emerald-400" />,
-      "Tools & DevOps": <Settings className="w-4 h-4 text-cyan-400" />
+      "Styling": <Layers className="w-4 h-4 text-pink-400" />,
+      "State Management": <Database className="w-4 h-4 text-emerald-400" />,
+      "Performance": <TrendingUp className="w-4 h-4 text-amber-400" />,
+      "API & Networking": <Globe className="w-4 h-4 text-blue-400" />,
+      "Developer Tools": <Settings className="w-4 h-4 text-cyan-400" />
     };
     return icons[category] || <Settings className="w-4 h-4 text-cyan-400" />;
   };
